@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="description">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="form-section">
+        <div>Try it free 7 days then $20/mo.</div>
+        <form class="form">
+          <div class="inputWrapper">
+            <input
+              type="text"
+              placeholder=" "
+              id="firstNameInput"
+              class="notEmailInput"
+            />
+            <p class="errorMessage">First Name cannot be empty</p>
+            <label>First Name</label>
+            <img src="images/icon-error.svg" alt="" class="errorIcon" />
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="text"
+              placeholder=" "
+              id="lastNameInput"
+              class="notEmailInput"
+            />
+            <p class="errorMessage">Last Name cannot be empty</p>
+            <label>Last Name</label>
+            <img src="images/icon-error.svg" alt="" class="errorIcon" />
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="text"
+              placeholder=" "
+              id="emailAddressInput"
+              class="emailInput"
+            />
+            <p class="errorMessage">Looks like this is not an email</p>
+            <label>Email Address</label>
+            <img src="images/icon-error.svg" alt="" class="errorIcon" />
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="password"
+              placeholder=" "
+              id="passwordInput"
+              class="notEmailInput"
+            />
+            <p class="errorMessage">Password cannot be empty</p>
+            <label>Password</label>
+            <img src="images/icon-error.svg" alt="" class="errorIcon" />
+          </div>
+          <button id="sendForm">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+      <section class="success-message">
+        <div>
+          <h1 id="emailSend"></h1>
+          <p>
+            Your free trial has been sent to your email. Please check your inbox
+            for instructions on how to get started.
+          </p>
+          <button id="dismissMessage" onclick="closeMessage()">
+            Got it, Thanks!
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- Thank you dasdasd!
+Your free trial has been sent to your email
+. Please check your inbox for instructions on how to get started.
+-->
